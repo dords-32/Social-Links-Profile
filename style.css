@@ -1,0 +1,113 @@
+@font-face {
+    font-family: Inter;
+    src:
+        local("Inter"),
+        url(/assets/fonts/Inter-VariableFont_slnt\,wght.ttf) format("truetype");
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    --foreground: hsl(0, 0%, 100%);
+    --background: hsl(0, 0%, 8%);
+    --content-background: hsl(0, 0%, 12%);
+    --buttons-background: hsl(0, 0%, 20%);
+    --highlight-color: hsl(75, 94%, 57%);
+}
+
+body {
+    font-family: Inter;
+    font-size: 14px;
+    background-color: var(--background);
+    color: var(--foreground);
+}
+
+.wrapperContainer {
+    --padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    height: 100dvh;
+    padding: var(--padding);
+}
+
+.container {
+    width: 100%;
+    max-width: 26.78571428571429em;
+    border-radius: 1em;
+    padding: var(--padding);
+    background-color: var(--content-background);
+}
+
+.header {
+    text-align: center;
+}
+
+.header__photo {
+    width: 6.5em;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.header__mainContent {
+    margin: 1.6em 0;
+    font-weight: 700;
+}
+.header__name {
+    margin: 0.5em 0;
+    font-size: 1.8em;
+    font-weight: inherit;
+}
+
+.header__endress {
+    font-style: normal;
+    color: var(--highlight-color);
+}
+
+.header__bio {
+    margin-top: 2.25em;
+    margin-bottom: 1.3em;
+    opacity: 0.75;
+}
+
+.listItem {
+    display: flex;
+    margin-top: 1.5em;
+}
+
+
+.listItem__link {
+    width: 100%;
+    border-radius: 0.5em;
+    padding: 1em 0;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    background-color: var(--buttons-background);
+}
+
+.listItem__link:hover {
+    background-color: var(--highlight-color);
+    color: var(--background);
+}
+
+.attribution {
+    padding: 2.5rem 0;
+    text-align: center;
+    font-size: 1em;
+    opacity: 0.75;
+}
+
+.attribution > a {
+    color: var(--highlight-color);
+}
