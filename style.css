@@ -96,7 +96,7 @@ body {
     background-color: var(--buttons-background);
 }
 
-.listItem__link:hover {
+.listItem__link:hover, .listItem__link:focus {
     background-color: var(--highlight-color);
     color: var(--background);
 }
